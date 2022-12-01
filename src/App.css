@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color:#f8f8f8;
+background: rgba(252, 163, 17, 0.84);
+backdrop-filter: blur(0px);
+border: 1px solid rgba(252, 163, 17, 0.4);
+}
+.todo {
+background: rgba(20, 33, 61, 0.27);
+backdrop-filter: blur(6.5px);
+border: 1px solid rgba(20, 33, 61, 0.52);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  border-radius: 20px;
+padding: 30px;
+}
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 10px;
+}
+.input input {
+  width: 318px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: grey;
+  font-size: 20px;
+  font-weight: 900;
+  padding-left: 7px;
+}
+.input button {
+  font-size: 30px;
+  font-weight: 1000;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: grey;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 370px;
+}
+.counter button {
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: grey;
+  /* font-size: 15px; */
+  font-weight: 1000;
+}
+.counter button:hover{
+  color :white;
+  cursor: pointer;
+  background-color: rgb(121, 10, 10);
+  transition:0.5s;;
+}
+.cardHolder{
+  overflow-y: scroll;
+  max-height: 350px;
+  min-height:50px;
+  width: 350px;
+  padding: 10px;
+  background-color: #dfdfdf;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.card{
+background: rgba(20, 33, 61, 0.54);
+backdrop-filter: blur(3.7px);
+border: 1px solid rgba(20, 33, 61, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 900;
+  height: 40px;
+}
+.delete:hover{
+  cursor: pointer;
+ color:rgb(121, 10, 10);
+ transition:1s;
+}
+
+
