@@ -10,11 +10,14 @@ function App() {
   const [count, setcount] = useState(todo.length)
 
   const handleClick = () => {
-    let newData = {}
-    newData.id = count + 1
-    newData.task = state
-    settodo((cure) => { return [...cure, newData] })
-    setcount((c) => c + 1)
+    if (state) {
+      let newData = {}
+      newData.id = count + 1
+      newData.task = state
+      settodo((cure) => { return [...cure, newData] })
+      setcount((c) => c + 1)
+    }
+
   }
 
   const DeleteItem = (val) => {
