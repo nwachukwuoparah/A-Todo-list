@@ -8,7 +8,7 @@ const Controles = ({todo,coun,Del}) => {
                 <p>You have {coun} pending task</p>
                 <button>Filter</button>
             </div>
-            <div className='cardHolder'>console.log(item)
+            <div className='cardHolder'>
                 {todo?.map(
                     (item) => <div className='card'><p>{item.task}</p>
                         <div className='delete'>
