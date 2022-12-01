@@ -3,7 +3,7 @@ import { MdDelete } from "react-icons/md";
 
 const Controles = ({todo,coun,Del}) => {
     return (
-        <div>
+        <div className='maincardHolder'>
             <div className='counter'>
                 <p>You have {coun} pending task</p>
                 <button>Filter</button>

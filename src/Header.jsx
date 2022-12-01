@@ -3,8 +3,8 @@ import './App.css'
 const Header = ({Click,val,set}) => {
 
     return (
-        <div>
-            <header>
+        <div className='Todo'>
+            <header className='Todo1'>
                 <h1>Todo App</h1>
             </header>
             <div className='input'>

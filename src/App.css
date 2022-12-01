@@ -1,6 +1,6 @@
 * {
   margin: 0px;
-  padding: 0px;
+ padding: 0px;
 }
 
 .App {
@@ -24,13 +24,21 @@ border: 1px solid rgba(20, 33, 61, 0.52);
   gap: 10px;
   border-radius: 20px;
 padding: 30px;
+width: 40%;
 }
+.Todo{
+  width: 100%;
+  /* background-color: red; */
+}
+
 .input {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2px;
   margin-top: 10px;
+  width: 100%;
+  /* background-color: grey; */
 }
 .input input {
   width: 318px;
@@ -41,6 +49,7 @@ padding: 30px;
   font-size: 20px;
   font-weight: 900;
   padding-left: 7px;
+  width: 100%;
 }
 .input button {
   font-size: 30px;
@@ -55,7 +64,7 @@ padding: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 370px;
+  width: 100%;
 }
 .counter button {
   padding: 3px;
@@ -71,15 +80,23 @@ padding: 30px;
   background-color: rgb(121, 10, 10);
   transition:0.5s;;
 }
+.maincardHolder{
+  /* background-color: red; */
+  width: 100%;
+}
 .cardHolder{
   overflow-y: scroll;
   max-height: 350px;
   min-height:50px;
-  width: 350px;
-  padding: 10px;
   background-color: #dfdfdf;
   border-radius: 10px;
   margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
 }
 .card{
 background: rgba(20, 33, 61, 0.54);
@@ -94,6 +111,7 @@ border: 1px solid rgba(20, 33, 61, 0.4);
   font-size: 20px;
   font-weight: 900;
   height: 40px;
+  width: 85%;
 }
 .delete:hover{
   cursor: pointer;
