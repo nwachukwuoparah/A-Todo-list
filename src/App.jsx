@@ -12,22 +12,19 @@ function App() {
   const handleClick = () => {
     if (state) {
       let newData = {}
-      newData.id = count + 1
+      newData.id = count
       newData.task = state
       settodo((cure) => { return [...cure, newData] })
       setcount((c) => c + 1)
     }
-
   }
 
   const DeleteItem = (val) => {
     let nweList = todo.filter((list) => (list.id !== val.id))
-    console.log(val.id)
     settodo(nweList)
     setcount((c) => c - 1)
-    console.log(nweList)
   }
-  // useEffect(()=>{console.log(item)},[])
+
   return (<div className='App'>
     <div className='todo'>
       <Header set={setState} Click={handleClick} />

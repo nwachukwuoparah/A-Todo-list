@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'
-const Header = ({Click,val,set}) => {
+const Header = ({ Click, val, set }) => {
 
     return (
         <div className='Todo'>
@@ -8,7 +8,7 @@ const Header = ({Click,val,set}) => {
                 <h1>Todo App</h1>
             </header>
             <div className='input'>
-                <input aria-required value={val}
+                <input  aria-required value={val}
                     onChange={(e) => set(e.target.value)}
                     type='text' placeholder='add-todo' />
                 <button onClick={Click}>+</button>

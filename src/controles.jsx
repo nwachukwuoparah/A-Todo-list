@@ -1,7 +1,7 @@
 import './App.css'
 import { MdDelete } from "react-icons/md";
 
-const Controles = ({todo,coun,Del}) => {
+const Controles = ({ todo, coun, Del }) => {
     return (
         <div className='maincardHolder'>
             <div className='counter'>
@@ -12,7 +12,7 @@ const Controles = ({todo,coun,Del}) => {
                 {todo?.map(
                     (item) => <div className='card'><p>{item.task}</p>
                         <div className='delete'>
-                 <MdDelete onClick={() => {Del(item) }} /></div></div>
+                            <MdDelete onClick={() => { Del(item) }} /></div></div>
                 )}
             </div>
         </div>
