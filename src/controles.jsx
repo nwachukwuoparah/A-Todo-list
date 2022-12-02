@@ -9,10 +9,11 @@ const Controles = ({ todo, coun, Del }) => {
                 <button>Filter</button>
             </div>
             <div className='cardHolder'>
-                {todo?.map(
+
+                {todo.length === 0 ? <p className='inital'>Add a to-do</p> : todo?.map(
                     (item) => <div className='card'><p>{item.task}</p>
                         <div className='delete'>
-                            <MdDelete onClick={() => { Del(item) }} /></div></div>
+                            {console.log(item)}      <MdDelete onClick={() => { Del(item) }} /></div></div>
                 )}
             </div>
         </div>
